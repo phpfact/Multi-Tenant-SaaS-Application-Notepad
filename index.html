@@ -18,15 +18,15 @@
     .gradient-phase { background: linear-gradient(135deg, #0891b2 0%, #0d9488 100%); }
 
     .checkbox-custom {
-      width: 18px;
-      height: 18px;
+      width: 16px;
+      height: 16px;
       border-radius: 4px;
       border: 2px solid #d1d5db;
     }
 
     .timeline-dot {
-      width: 12px;
-      height: 12px;
+      width: 10px;
+      height: 10px;
       border-radius: 50%;
       background-color: #d1d5db;
     }
@@ -37,51 +37,58 @@
 
 <body class="bg-gradient-to-br from-slate-50 to-slate-100 text-slate-800 min-h-screen">
 
-<div class="max-w-5xl mx-auto px-4 py-12">
+<div class="max-w-5xl mx-auto px-3 sm:px-4 py-8 sm:py-12">
 
   <!-- HEADER -->
-  <div class="text-center mb-12">
-    <div class="inline-flex items-center justify-center p-3 bg-indigo-100 rounded-2xl mb-4">
-      <i class="fas fa-cloud text-3xl text-indigo-600"></i>
+  <div class="text-center mb-8 sm:mb-12">
+    <div class="inline-flex items-center justify-center p-2 sm:p-3 bg-indigo-100 rounded-2xl mb-3 sm:mb-4">
+      <i class="fas fa-cloud text-2xl sm:text-3xl text-indigo-600"></i>
     </div>
-    <h1 class="text-4xl font-bold text-slate-900">Multi-Tenant SaaS Application</h1>
-    <p class="text-slate-600 mt-3 text-lg">
-      Phase 01 – Core Starter Kit <span class="text-indigo-600 font-medium">(Mandatory Foundation)</span>
+    <h1 class="text-2xl sm:text-4xl font-bold text-slate-900">
+      Multi-Tenant SaaS Application
+    </h1>
+    <p class="text-slate-600 mt-2 sm:mt-3 text-sm sm:text-lg">
+      Phase 01 – Core Starter Kit
+      <span class="text-indigo-600 font-medium">(Mandatory Foundation)</span>
     </p>
-    <div class="mt-6 flex justify-center gap-4 flex-wrap">
-      <div class="bg-emerald-50 text-emerald-700 px-5 py-2 rounded-full font-semibold">
+    <div class="mt-4 sm:mt-6 flex justify-center gap-2 sm:gap-4 flex-wrap">
+      <div class="bg-emerald-50 text-emerald-700 px-3 sm:px-5 py-1.5 sm:py-2 rounded-full text-sm font-semibold">
         ⏱ 27 Working Days
       </div>
-      <div class="bg-slate-100 px-5 py-2 rounded-full text-sm">
+      <div class="bg-slate-100 px-3 sm:px-5 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm">
         Investor-ready scope & timeline
       </div>
     </div>
   </div>
 
   <!-- PHASE OVERVIEW -->
-  <div class="gradient-phase rounded-2xl p-8 mb-10 text-white">
-    <h2 class="text-2xl font-bold mb-3">📌 Phase 01 Overview</h2>
-    <p class="text-blue-50">
+  <div class="gradient-phase rounded-2xl p-5 sm:p-8 mb-8 sm:mb-10 text-white">
+    <h2 class="text-lg sm:text-2xl font-bold mb-2 sm:mb-3">📌 Phase 01 Overview</h2>
+    <p class="text-blue-50 text-sm sm:text-base">
       This phase contains only <b>must-have core modules</b> required
       to build any scalable Multi-Tenant SaaS product.
     </p>
   </div>
 
   <!-- AUTH MODULE -->
-  <div class="bg-white rounded-2xl card-shadow mb-8 border border-slate-100">
-    <div class="border-l-4 border-green-500 p-6">
-      <div class="flex justify-between items-center mb-6">
-        <h2 class="text-2xl font-bold">1. Authentication Module</h2>
-        <span class="bg-green-50 text-green-700 px-5 py-2 rounded-full font-bold">8 Days</span>
+  <div class="bg-white rounded-2xl card-shadow mb-6 sm:mb-8 border border-slate-100">
+    <div class="border-l-4 border-green-500 p-4 sm:p-6">
+      <div class="flex justify-between items-center mb-4 sm:mb-6">
+        <h2 class="text-lg sm:text-2xl font-bold">1. Authentication Module</h2>
+        <span class="bg-green-50 text-green-700 px-3 sm:px-5 py-1.5 sm:py-2 rounded-full text-sm font-bold">
+          8 Days
+        </span>
       </div>
 
       <!-- Login -->
-      <div class="bg-slate-50 p-5 rounded-xl mb-5">
-        <div class="flex items-center gap-3 mb-3">
+      <div class="bg-slate-50 p-4 sm:p-5 rounded-xl mb-4 sm:mb-5">
+        <div class="flex items-center gap-3 mb-2 sm:mb-3">
           <div class="checkbox-custom bg-white"></div>
-          <h3 class="font-bold">Master Login <span class="text-sm text-slate-500">(1 Day)</span></h3>
+          <h3 class="font-bold text-sm sm:text-base">
+            Master Login <span class="text-xs sm:text-sm text-slate-500">(1 Day)</span>
+          </h3>
         </div>
-        <div class="ml-9 space-y-2 text-sm">
+        <div class="ml-7 sm:ml-9 space-y-1.5 text-xs sm:text-sm">
           <div class="flex gap-3"><div class="timeline-dot"></div>Database tables & schema</div>
           <div class="flex gap-3"><div class="timeline-dot"></div>Backend API & validation</div>
           <div class="flex gap-3"><div class="timeline-dot completed-dot"></div>Frontend UI page</div>
@@ -89,12 +96,14 @@
       </div>
 
       <!-- Signup -->
-      <div class="bg-slate-50 p-5 rounded-xl mb-5">
-        <div class="flex items-center gap-3 mb-3">
+      <div class="bg-slate-50 p-4 sm:p-5 rounded-xl mb-4 sm:mb-5">
+        <div class="flex items-center gap-3 mb-2 sm:mb-3">
           <div class="checkbox-custom bg-white"></div>
-          <h3 class="font-bold">Signup <span class="text-sm text-slate-500">(2 Days)</span></h3>
+          <h3 class="font-bold text-sm sm:text-base">
+            Signup <span class="text-xs sm:text-sm text-slate-500">(2 Days)</span>
+          </h3>
         </div>
-        <div class="ml-9 space-y-2 text-sm">
+        <div class="ml-7 sm:ml-9 space-y-1.5 text-xs sm:text-sm">
           <div class="flex gap-3"><div class="timeline-dot"></div>User & tenant tables</div>
           <div class="flex gap-3"><div class="timeline-dot"></div>Backend signup logic</div>
           <div class="flex gap-3"><div class="timeline-dot"></div>Signup UI page</div>
@@ -102,12 +111,14 @@
       </div>
 
       <!-- Password -->
-      <div class="bg-slate-50 p-5 rounded-xl">
-        <div class="flex items-center gap-3 mb-3">
+      <div class="bg-slate-50 p-4 sm:p-5 rounded-xl">
+        <div class="flex items-center gap-3 mb-2 sm:mb-3">
           <div class="checkbox-custom bg-white"></div>
-          <h3 class="font-bold">Forgot / Reset Password <span class="text-sm text-slate-500">(2 Days)</span></h3>
+          <h3 class="font-bold text-sm sm:text-base">
+            Forgot / Reset Password <span class="text-xs sm:text-sm text-slate-500">(2 Days)</span>
+          </h3>
         </div>
-        <div class="ml-9 space-y-2 text-sm">
+        <div class="ml-7 sm:ml-9 space-y-1.5 text-xs sm:text-sm">
           <div class="flex gap-3"><div class="timeline-dot"></div>Token & DB structure</div>
           <div class="flex gap-3"><div class="timeline-dot"></div>Reset password API</div>
           <div class="flex gap-3"><div class="timeline-dot"></div>Reset UI flow</div>
@@ -117,32 +128,36 @@
   </div>
 
   <!-- USER & ROLE -->
-  <div class="bg-white rounded-2xl card-shadow mb-8 border border-slate-100">
-    <div class="border-l-4 border-purple-500 p-6">
-      <div class="flex justify-between items-center mb-6">
-        <h2 class="text-2xl font-bold">2. User & Role Management</h2>
-        <span class="bg-purple-50 text-purple-700 px-5 py-2 rounded-full font-bold">4 Days</span>
+  <div class="bg-white rounded-2xl card-shadow mb-6 sm:mb-8 border border-slate-100">
+    <div class="border-l-4 border-purple-500 p-4 sm:p-6">
+      <div class="flex justify-between items-center mb-4 sm:mb-6">
+        <h2 class="text-lg sm:text-2xl font-bold">2. User & Role Management</h2>
+        <span class="bg-purple-50 text-purple-700 px-3 sm:px-5 py-1.5 sm:py-2 rounded-full text-sm font-bold">
+          4 Days
+        </span>
       </div>
 
-      <div class="space-y-5">
-        <div class="bg-slate-50 p-5 rounded-xl">
-          <h3 class="font-bold mb-2">Master User (Super Admin)</h3>
-          <div class="ml-6 space-y-1 text-sm">
+      <div class="space-y-4 sm:space-y-5">
+        <div class="bg-slate-50 p-4 sm:p-5 rounded-xl">
+          <h3 class="font-bold text-sm sm:text-base mb-1 sm:mb-2">
+            Master User (Super Admin)
+          </h3>
+          <div class="ml-5 sm:ml-6 space-y-1 text-xs sm:text-sm">
             <div class="flex gap-3"><div class="timeline-dot"></div>Global permissions</div>
             <div class="flex gap-3"><div class="timeline-dot"></div>System-wide access</div>
           </div>
         </div>
 
-        <div class="bg-slate-50 p-5 rounded-xl">
-          <h3 class="font-bold mb-2">Tenant Admin</h3>
-          <div class="ml-6 text-sm flex gap-3">
+        <div class="bg-slate-50 p-4 sm:p-5 rounded-xl">
+          <h3 class="font-bold text-sm sm:text-base mb-1 sm:mb-2">Tenant Admin</h3>
+          <div class="ml-5 sm:ml-6 text-xs sm:text-sm flex gap-3">
             <div class="timeline-dot completed-dot"></div>Tenant-level permissions
           </div>
         </div>
 
-        <div class="bg-slate-50 p-5 rounded-xl">
-          <h3 class="font-bold mb-2">Tenant User</h3>
-          <div class="ml-6 text-sm flex gap-3">
+        <div class="bg-slate-50 p-4 sm:p-5 rounded-xl">
+          <h3 class="font-bold text-sm sm:text-base mb-1 sm:mb-2">Tenant User</h3>
+          <div class="ml-5 sm:ml-6 text-xs sm:text-sm flex gap-3">
             <div class="timeline-dot"></div>Restricted access
           </div>
         </div>
@@ -151,64 +166,78 @@
   </div>
 
   <!-- TENANT / WORKSPACE -->
-  <div class="bg-white rounded-2xl card-shadow mb-8 border border-slate-100">
-    <div class="border-l-4 border-amber-500 p-6">
-      <div class="flex justify-between items-center mb-6">
-        <h2 class="text-2xl font-bold">3. Tenant / Workspace System</h2>
-        <span class="bg-amber-50 text-amber-700 px-5 py-2 rounded-full font-bold">5 Days</span>
+  <div class="bg-white rounded-2xl card-shadow mb-6 sm:mb-8 border border-slate-100">
+    <div class="border-l-4 border-amber-500 p-4 sm:p-6">
+      <div class="flex justify-between items-center mb-4 sm:mb-6">
+        <h2 class="text-lg sm:text-2xl font-bold">3. Tenant / Workspace System</h2>
+        <span class="bg-amber-50 text-amber-700 px-3 sm:px-5 py-1.5 sm:py-2 rounded-full text-sm font-bold">
+          5 Days
+        </span>
       </div>
 
-      <div class="space-y-5">
-        <div class="bg-slate-50 p-5 rounded-xl">
-          <h3 class="font-bold mb-2">Tenant Creation & Ownership</h3>
-          <div class="ml-6 space-y-1 text-sm">
+      <div class="space-y-4 sm:space-y-5">
+
+        <div class="bg-slate-50 p-4 sm:p-5 rounded-xl">
+          <h3 class="font-bold text-sm sm:text-base mb-1 sm:mb-2">
+            Tenant Creation & Ownership
+          </h3>
+          <div class="ml-5 sm:ml-6 space-y-1 text-xs sm:text-sm">
             <div class="flex gap-3"><div class="timeline-dot"></div>Tenant database tables</div>
             <div class="flex gap-3"><div class="timeline-dot"></div>Assign tenant owner (Admin)</div>
             <div class="flex gap-3"><div class="timeline-dot"></div>Tenant initialization logic</div>
           </div>
         </div>
 
-        <div class="bg-slate-50 p-5 rounded-xl">
-          <h3 class="font-bold mb-2">Tenant-wise Data Isolation</h3>
-          <div class="ml-6 space-y-1 text-sm">
+        <div class="bg-slate-50 p-4 sm:p-5 rounded-xl">
+          <h3 class="font-bold text-sm sm:text-base mb-1 sm:mb-2">
+            Tenant-wise Data Isolation
+          </h3>
+          <div class="ml-5 sm:ml-6 space-y-1 text-xs sm:text-sm">
             <div class="flex gap-3"><div class="timeline-dot"></div>Tenant ID based filtering</div>
             <div class="flex gap-3"><div class="timeline-dot"></div>Middleware / guard enforcement</div>
             <div class="flex gap-3"><div class="timeline-dot"></div>Prevent cross-tenant access</div>
           </div>
         </div>
 
-        <div class="bg-slate-50 p-5 rounded-xl">
-          <h3 class="font-bold mb-2">Tenant Settings Module</h3>
-          <div class="ml-6 space-y-1 text-sm">
+        <div class="bg-slate-50 p-4 sm:p-5 rounded-xl">
+          <h3 class="font-bold text-sm sm:text-base mb-1 sm:mb-2">
+            Tenant Settings Module
+          </h3>
+          <div class="ml-5 sm:ml-6 space-y-1 text-xs sm:text-sm">
             <div class="flex gap-3"><div class="timeline-dot"></div>Basic tenant profile settings</div>
             <div class="flex gap-3"><div class="timeline-dot"></div>Tenant status (active / suspended)</div>
             <div class="flex gap-3"><div class="timeline-dot"></div>Update tenant configuration</div>
           </div>
         </div>
 
-        <div class="bg-slate-50 p-5 rounded-xl">
-          <h3 class="font-bold mb-2">Switch Tenant Logic</h3>
-          <div class="ml-6 space-y-1 text-sm">
+        <div class="bg-slate-50 p-4 sm:p-5 rounded-xl">
+          <h3 class="font-bold text-sm sm:text-base mb-1 sm:mb-2">
+            Switch Tenant Logic
+          </h3>
+          <div class="ml-5 sm:ml-6 space-y-1 text-xs sm:text-sm">
             <div class="flex gap-3"><div class="timeline-dot"></div>User linked to multiple tenants</div>
             <div class="flex gap-3"><div class="timeline-dot"></div>Session-based tenant switching</div>
             <div class="flex gap-3"><div class="timeline-dot"></div>Context reload & permission refresh</div>
           </div>
         </div>
+
       </div>
     </div>
   </div>
 
   <!-- PHASE 02 -->
-  <div class="mt-12 bg-slate-900 rounded-2xl p-8 text-white text-center">
-    <h2 class="text-2xl font-bold mb-2">🚧 Phase 02 – Coming Next</h2>
-    <p class="text-slate-300">
+  <div class="mt-10 sm:mt-12 bg-slate-900 rounded-2xl p-6 sm:p-8 text-white text-center">
+    <h2 class="text-lg sm:text-2xl font-bold mb-1 sm:mb-2">
+      🚧 Phase 02 – Coming Next
+    </h2>
+    <p class="text-slate-300 text-sm sm:text-base">
       Advanced business modules & optimizations<br>
       <span class="text-amber-400 font-medium">Status: Pending</span>
     </p>
   </div>
 
   <!-- FOOTER -->
-  <div class="mt-10 text-center text-sm text-slate-500">
+  <div class="mt-8 sm:mt-10 text-center text-xs sm:text-sm text-slate-500">
     <p>💡 This document defines the minimum foundation required to build a scalable SaaS product.</p>
   </div>
 
